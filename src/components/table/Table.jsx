@@ -67,8 +67,9 @@ export default function Datatable({setFilteredData}) {
       startDate: null,
       endDate: null,
       transactionTypes: [],
-      transactionStatuses: []
+      transactionStatuses: [],
     });
+    setSelectedButton(null)
     setIsFiltered(false); // Reset filter status
   };
 

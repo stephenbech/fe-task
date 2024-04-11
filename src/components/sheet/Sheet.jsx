@@ -59,6 +59,7 @@ function Filter({onFilterChange, filterData, setFilteredData, data, selectedButt
    setSelectedValues2([]);
    setStartDate(null);
    setEndDate(null);
+   setSelectedButton(null)
 };
 
   const [toggle, setToggle] = useState(false);
