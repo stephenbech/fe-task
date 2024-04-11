@@ -21,7 +21,7 @@ function Header() {
           <div className="flex justify-center items-center">
           <img src="assets/mainstack-logo.png" alt="logo" />
           </div>
-          <nav className='hidden sm:flex justify-center text-[#56616B] items-center'>
+          <nav className='hidden md:hidden lg:flex  justify-center text-[#56616B] items-center'>
               <ul className='flex gap-x-4'>
                   <li className={`flex items-center gap-1    py-2 px-4 hover:rounded-full  
                        ${activeMenuItem === 'Home' ? 'bg-[#131316] text-white rounded-full' : 'hover:bg-[#EFF1F6]'}
@@ -62,7 +62,7 @@ function Header() {
                   <AppDropdown activeMenuItem={activeMenuItem} handleMenuItemClick={handleMenuItemClick}/>
               </ul>
           </nav>
-          <div className='hidden sm:flex items-center gap-x-8'>
+          <div className='hidden md:hidden lg:flex items-center gap-x-8'>
               <div className="">
                 <BsBell className='w-5 h-5 '/>
               </div>
@@ -74,14 +74,14 @@ function Header() {
               </div>
           </div>
 
-          <div className=' flex sm:hidden '>
-            <Sheet className="flex flex-col sm:hidden">
+          <div className=' flex md:flex lg:hidden '>
+            <Sheet className="flex flex-col md:flex-col md:flex lg:hidden">
                 <SheetTrigger>
-                  <button className='flex sm:hidden text-black bg-blac p-2 rounded-ful'>
+                  <button className='flex lg:hidden text-black bg-blac p-2 rounded-ful'>
                       <BiMenu className='w-6 h-6'/>
                   </button>
                 </SheetTrigger>
-                <SheetContent className="flex flex-col sm:hidden">
+                <SheetContent className="flex flex-col md:flex lg:hidden">
                   <SheetHeader>
                     <SheetTitle>
                       <div className="flex justify-cente items-cente">
